@@ -18,6 +18,7 @@
 (provide #%app)
 (provide #%module-begin)
 (provide #%top)
+(provide #%top-interaction)
 
 ;; simple let syntax that only allows binding to a single variable
 ;; we also prevent recursive definition.
