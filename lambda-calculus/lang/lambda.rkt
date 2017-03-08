@@ -62,7 +62,7 @@
 
 ;; those are not exported
 
-(define O (λ (f x) x)) 
+(define O (λ (f x) x))
 (define succ (λ (n) (λ (f x) (f (n f x)))))
 
 (define null (λ (f x) x))
