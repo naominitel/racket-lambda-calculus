@@ -18,6 +18,7 @@
 (provide #%app)
 (provide #%module-begin)
 (provide #%top)
+(provide #%top-interaction)
 
 ;; simple let syntax that only allows binding to a single variable
 ;; we also prevent recursive definition.
@@ -61,7 +62,7 @@
 
 ;; those are not exported
 
-(define O (λ (f x) x)) 
+(define O (λ (f x) x))
 (define succ (λ (n) (λ (f x) (f (n f x)))))
 
 (define null (λ (f x) x))
